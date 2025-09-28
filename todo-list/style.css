@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg?semt=ais_hybrid&w=740&q=80);
+    background-size: cover;
+background-position: center;
+}
+
+
+.container {
+    background: #791b745e;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 7px 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 95%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+#add-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(170, 68, 162);
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+#add-button:hover {
+    background-color: #9e00b3;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #e9ecef;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+/* Style for completed tasks */
+.completed label {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.task-content input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+    /* Basic styling for the checkbox */
+    width: 18px;
+    height: 18px;
+}
+
+.delete-button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
